@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Do ITEL</title>
+    <style>  /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(65, 121, 241);;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1{
+            font-size: 15px;
+            color: #000;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        
+        /* Estilos do conteúdo principal */
+        main {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .noticias {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        
+        .noticia {
+            background-color: rgb(87, 244, 255);;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .imagem-container {
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 5px solid #3498db;
+        }
+        
+        .imagem-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .imagem-container:hover img {
+            transform: scale(1.05);
+        }
+        
+        .texto-noticia {
+            padding: 20px;
+            font-size: 1.1em;
+        }
+        
+        .texto-noticia h2 {
+            font-size: 1.8em;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .texto-noticia p {
+            font-size: 20px;
+            color: #000;
+            line-height: 1.6;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+        
+            .noticias {
+                grid-template-columns: 1fr;
+            }
+        
+            .texto-noticia h2 {
+                font-size: 1.5em;
+            }
+        
+            .texto-noticia p {
+                font-size: 1em;
+            }
+        }
+        
+        </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-size: 50px;">Notícias do ITEL</h1>
+    </header>
+
+    <main>
+        <section class="noticias">
+            <div class="noticia">
+                <div class="imagem-container">
+                    <img src="imagens/electronica.png" alt="Imagem 1">
+                </div>
+                <div class="texto-noticia">
+                    <h2>Actualizacao de Conteudo</h2>
+                    <p>Estamos constantemente atualizando nosso conteúdo para garantir que nossos alunos tenham acesso às mais recentes tecnologias.</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <div class="imagem-container">
+                    <img src="imagens/electronica.png" alt="Imagem 2">
+                </div>
+                <div class="texto-noticia">
+                    <h2>Novo Curso</h2>
+                    <p>Nosso novo curso de Inteligência Artificial começa no próximo mês, com módulos práticos e teóricos.</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <div class="imagem-container">
+                    <img src="imagens/electronica.png" alt="Imagem 3">
+                </div>
+                <div class="texto-noticia">
+                    <h2>Hackathon</h2>
+                    <p>Alunos do curso de informatica e sistemas Multimedia participaram de um hackathon para resolver problemas reais de empresas.</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <div class="imagem-container">
+                    <img src="imagens/electronica.png" alt="Imagem 4">
+                </div>
+                <div class="texto-noticia">
+                    <h2>Eleicoes Escolares</h2>
+                    <p>A nossa escola foi eleita como uma das melhores instituições de ensino de tecnologia no estado.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
